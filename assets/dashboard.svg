@@ -1,22 +1,171 @@
-<br>
+from pathlib import Path
+import cairosvg
 
-<h3 align="center">Tech Stack</h3>
+svg = r'''<svg width="1200" height="860" viewBox="0 0 1200 860" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="860">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#d946ef"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,react,ts,nodejs,express,cs,mongodb,docker,jenkins,aws,azure,git,github,cloudflare&theme=dark" />
-</p>
+  <rect width="1200" height="860" rx="28" fill="url(#bg)"/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/SQL-0D1117?style=flat-square&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Oracle-0D1117?style=flat-square&logo=oracle&logoColor=white" />
-</p>
+  <!-- TITLE -->
+  <text x="50" y="52" fill="#f8fafc" font-size="26" font-weight="700"
+        font-family="Inter,Segoe UI,Arial,sans-serif">Developer Dashboard</text>
+  <text x="50" y="78" fill="#94a3b8" font-size="13"
+        font-family="Inter,Segoe UI,Arial,sans-serif">
+    Karan Handa • full-stack development, data, DevOps, cloud, and software engineering
+  </text>
 
-<br>
+  <!-- TECH STRIP -->
+  <rect x="30" y="100" width="1140" height="92" rx="18" fill="#0f1623" stroke="#263244"/>
+  <text x="52" y="130" fill="#60a5fa" font-size="14" font-weight="700"
+        font-family="Inter,Segoe UI,Arial,sans-serif">TECHNOLOGY STRIP</text>
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/karanhanda07/karanhanda07/main/assets/dashboard.svg"
-    width="100%"
-    alt="Karan Handa Developer Dashboard"
-  />
-</p>
+  <!-- mini logo-like chips -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">
+    <rect x="52" y="145" width="86" height="30" rx="8" fill="#2b2610" stroke="#f7df1e"/><text x="95" y="165" text-anchor="middle" fill="#f7df1e">JS</text>
+    <rect x="148" y="145" width="86" height="30" rx="8" fill="#10242b" stroke="#61dafb"/><text x="191" y="165" text-anchor="middle" fill="#61dafb">React</text>
+    <rect x="244" y="145" width="86" height="30" rx="8" fill="#122033" stroke="#3178c6"/><text x="287" y="165" text-anchor="middle" fill="#60a5fa">TS</text>
+    <rect x="340" y="145" width="86" height="30" rx="8" fill="#16251a" stroke="#22c55e"/><text x="383" y="165" text-anchor="middle" fill="#86efac">Node</text>
+    <rect x="436" y="145" width="86" height="30" rx="8" fill="#171717" stroke="#d1d5db"/><text x="479" y="165" text-anchor="middle" fill="#f3f4f6">Express</text>
+    <rect x="532" y="145" width="86" height="30" rx="8" fill="#161d2b" stroke="#7dd3fc"/><text x="575" y="165" text-anchor="middle" fill="#bfdbfe">C#</text>
+    <rect x="628" y="145" width="86" height="30" rx="8" fill="#172033" stroke="#60a5fa"/><text x="671" y="165" text-anchor="middle" fill="#bfdbfe">SQL</text>
+    <rect x="724" y="145" width="86" height="30" rx="8" fill="#1a2418" stroke="#47a248"/><text x="767" y="165" text-anchor="middle" fill="#86efac">MongoDB</text>
+    <rect x="820" y="145" width="86" height="30" rx="8" fill="#2a1515" stroke="#f80000"/><text x="863" y="165" text-anchor="middle" fill="#fca5a5">Oracle</text>
+    <rect x="916" y="145" width="86" height="30" rx="8" fill="#11202e" stroke="#2496ed"/><text x="959" y="165" text-anchor="middle" fill="#7dd3fc">Docker</text>
+    <rect x="1012" y="145" width="86" height="30" rx="8" fill="#271616" stroke="#d24939"/><text x="1055" y="165" text-anchor="middle" fill="#fca5a5">Jenkins</text>
+  </g>
+
+  <!-- WIDE GRAPH / SDLC -->
+  <rect x="30" y="215" width="1140" height="220" rx="20" fill="#0f1623" stroke="#263244"/>
+  <text x="55" y="250" fill="#a78bfa" font-size="21" font-weight="700"
+        font-family="Inter,Segoe UI,Arial,sans-serif">Software Development Flow</text>
+  <text x="55" y="273" fill="#6b7280" font-size="11"
+        font-family="Inter,Segoe UI,Arial,sans-serif">
+    Requirements → design → implementation → testing → delivery, supported by Agile practices
+  </text>
+
+  <!-- smooth graph-like path -->
+  <path d="M90 370 C170 330,220 350,290 310 C360 270,420 320,490 285 C560 250,620 300,690 260 C760 220,825 265,900 230 C975 195,1040 215,1110 180"
+        fill="none" stroke="#38bdf8" stroke-width="4"/>
+  <path d="M90 370 C170 330,220 350,290 310 C360 270,420 320,490 285 C560 250,620 300,690 260 C760 220,825 265,900 230 C975 195,1040 215,1110 180 L1110 395 L90 395 Z"
+        fill="#38bdf8" opacity="0.10"/>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">
+    <circle cx="90" cy="370" r="7" fill="#8b5cf6"/><text x="90" y="414" text-anchor="middle" fill="#cbd5e1">Requirements</text>
+    <circle cx="290" cy="310" r="7" fill="#38bdf8"/><text x="290" y="414" text-anchor="middle" fill="#cbd5e1">Design</text>
+    <circle cx="490" cy="285" r="7" fill="#f7df1e"/><text x="490" y="414" text-anchor="middle" fill="#cbd5e1">Build</text>
+    <circle cx="690" cy="260" r="7" fill="#22c55e"/><text x="690" y="414" text-anchor="middle" fill="#cbd5e1">Test</text>
+    <circle cx="900" cy="230" r="7" fill="#f59e0b"/><text x="900" y="414" text-anchor="middle" fill="#cbd5e1">Deploy</text>
+    <circle cx="1110" cy="180" r="7" fill="#d946ef"/><text x="1110" y="414" text-anchor="middle" fill="#cbd5e1">Iterate</text>
+  </g>
+
+  <!-- DONUT CARD -->
+  <rect x="30" y="460" width="555" height="260" rx="20" fill="#0f1623" stroke="#263244"/>
+  <text x="55" y="495" fill="#f59e0b" font-size="21" font-weight="700"
+        font-family="Inter,Segoe UI,Arial,sans-serif">Technology Areas</text>
+  <text x="55" y="517" fill="#6b7280" font-size="11"
+        font-family="Inter,Segoe UI,Arial,sans-serif">
+    Based on the technologies and practices represented in my background
+  </text>
+
+  <!-- donut using counts 6 / 4 / 4 / 3 -->
+  <circle cx="402" cy="615" r="72" fill="none" stroke="#1f2937" stroke-width="28"/>
+  <!-- circumference ~452.39 -->
+  <circle cx="402" cy="615" r="72" fill="none" stroke="#38bdf8" stroke-width="28"
+          stroke-dasharray="159.67 292.72" stroke-dashoffset="0" transform="rotate(-90 402 615)"/>
+  <circle cx="402" cy="615" r="72" fill="none" stroke="#22c55e" stroke-width="28"
+          stroke-dasharray="106.44 345.95" stroke-dashoffset="-159.67" transform="rotate(-90 402 615)"/>
+  <circle cx="402" cy="615" r="72" fill="none" stroke="#8b5cf6" stroke-width="28"
+          stroke-dasharray="106.44 345.95" stroke-dashoffset="-266.11" transform="rotate(-90 402 615)"/>
+  <circle cx="402" cy="615" r="72" fill="none" stroke="#f59e0b" stroke-width="28"
+          stroke-dasharray="79.84 372.55" stroke-dashoffset="-372.55" transform="rotate(-90 402 615)"/>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700">
+    <text x="55" y="565" fill="#38bdf8">● Application Development</text>
+    <text x="55" y="598" fill="#22c55e">● Databases</text>
+    <text x="55" y="631" fill="#8b5cf6">● DevOps</text>
+    <text x="55" y="664" fill="#f59e0b">● Cloud</text>
+  </g>
+  <text x="55" y="696" fill="#64748b" font-size="10"
+        font-family="Inter,Segoe UI,Arial,sans-serif">
+    Distribution reflects listed tools/technologies, not skill level.
+  </text>
+
+  <!-- BAR / TEXT CARD -->
+  <rect x="615" y="460" width="555" height="260" rx="20" fill="#0f1623" stroke="#263244"/>
+  <text x="640" y="495" fill="#60a5fa" font-size="21" font-weight="700"
+        font-family="Inter,Segoe UI,Arial,sans-serif">Core Development Stack</text>
+  <text x="640" y="517" fill="#6b7280" font-size="11"
+        font-family="Inter,Segoe UI,Arial,sans-serif">
+    Profile emphasis only — these are not proficiency scores
+  </text>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700">
+    <text x="640" y="560" fill="#f7df1e">JavaScript</text>
+    <rect x="760" y="548" width="340" height="15" rx="7.5" fill="#2a2612"/>
+    <rect x="760" y="548" width="340" height="15" rx="7.5" fill="#f7df1e"/>
+
+    <text x="640" y="596" fill="#61dafb">React</text>
+    <rect x="760" y="584" width="340" height="15" rx="7.5" fill="#10242b"/>
+    <rect x="760" y="584" width="340" height="15" rx="7.5" fill="url(#blue)"/>
+
+    <text x="640" y="632" fill="#60a5fa">TypeScript</text>
+    <rect x="760" y="620" width="340" height="15" rx="7.5" fill="#122033"/>
+    <rect x="760" y="620" width="340" height="15" rx="7.5" fill="#3178c6"/>
+
+    <text x="640" y="668" fill="#86efac">Node / Express</text>
+    <rect x="760" y="656" width="340" height="15" rx="7.5" fill="#16251a"/>
+    <rect x="760" y="656" width="340" height="15" rx="7.5" fill="url(#green)"/>
+  </g>
+
+  <text x="640" y="700" fill="#94a3b8" font-size="11"
+        font-family="Inter,Segoe UI,Arial,sans-serif">
+    Also: C# • SQL • Oracle • MongoDB • REST APIs
+  </text>
+
+  <!-- BOTTOM TEXT CARDS -->
+  <rect x="30" y="745" width="555" height="85" rx="18" fill="#0f1623" stroke="#263244"/>
+  <text x="55" y="777" fill="#c084fc" font-size="16" font-weight="700"
+        font-family="Inter,Segoe UI,Arial,sans-serif">Software Engineering Background</text>
+  <text x="55" y="801" fill="#cbd5e1" font-size="11"
+        font-family="Inter,Segoe UI,Arial,sans-serif">
+    Advanced Diploma • Agile • Scrum • Kanban • system design fundamentals
+  </text>
+
+  <rect x="615" y="745" width="555" height="85" rx="18" fill="#0f1623" stroke="#263244"/>
+  <text x="640" y="777" fill="#34d399" font-size="16" font-weight="700"
+        font-family="Inter,Segoe UI,Arial,sans-serif">Engineering Toolkit</text>
+  <text x="640" y="801" fill="#cbd5e1" font-size="11"
+        font-family="Inter,Segoe UI,Arial,sans-serif">
+    Docker • Jenkins • Git/GitHub • AWS fundamentals • Azure coursework • Cloudflare
+  </text>
+</svg>'''
+
+svg_path = Path("/mnt/data/dashboard.svg")
+png_path = Path("/mnt/data/dashboard-preview.png")
+
+svg_path.write_text(svg, encoding="utf-8")
+cairosvg.svg2png(bytestring=svg.encode("utf-8"), write_to=str(png_path), output_width=1200, output_height=860)
+
+print(svg_path)
+print(png_path)
