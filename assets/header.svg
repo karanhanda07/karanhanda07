@@ -1,0 +1,140 @@
+<svg width="1200" height="380" viewBox="0 0 1200 380" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="380">
+      <stop stop-color="#0B1020"/>
+      <stop offset="0.48" stop-color="#141A33"/>
+      <stop offset="1" stop-color="#10172A"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="170" y1="80" x2="650" y2="300">
+      <stop stop-color="#00D4FF"/>
+      <stop offset="0.5" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#FF4FD8"/>
+    </linearGradient>
+
+    <linearGradient id="card" x1="790" y1="90" x2="1080" y2="300">
+      <stop stop-color="#20294A"/>
+      <stop offset="1" stop-color="#151B33"/>
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="18"
+                    flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="380" rx="30" fill="url(#bg)"/>
+
+  <!-- Glow -->
+  <circle cx="110" cy="40" r="180" fill="#6D5DFC" opacity="0.12"/>
+  <circle cx="1140" cy="340" r="190" fill="#00D4FF" opacity="0.10"/>
+  <circle cx="930" cy="40" r="120" fill="#FF4FD8" opacity="0.08"/>
+
+  <!-- Left accent -->
+  <rect x="74" y="75" width="8" height="220" rx="4" fill="url(#accent)"/>
+
+  <!-- Intro -->
+  <text x="115" y="112"
+        fill="#9CA8C7"
+        font-size="20"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="600"
+        letter-spacing="3">
+    HELLO, I'M
+  </text>
+
+  <text x="112" y="178"
+        fill="#FFFFFF"
+        font-size="62"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="800">
+    Karan Handa
+  </text>
+
+  <text x="115" y="225"
+        fill="url(#accent)"
+        font-size="27"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="700">
+    Full-Stack Software Developer
+  </text>
+
+  <text x="115" y="270"
+        fill="#C3CBE0"
+        font-size="20"
+        font-family="Arial, Helvetica, sans-serif">
+    JavaScript  •  React  •  TypeScript  •  Node.js
+  </text>
+
+  <text x="115" y="310"
+        fill="#7F8AA8"
+        font-size="17"
+        font-family="Arial, Helvetica, sans-serif">
+    Building modern full-stack applications.
+  </text>
+
+  <!-- Right dashboard card -->
+  <g filter="url(#shadow)">
+    <rect x="770" y="65" width="350" height="250" rx="24"
+          fill="url(#card)" stroke="#343D63"/>
+
+    <!-- window dots -->
+    <circle cx="807" cy="98" r="6" fill="#FF5F57"/>
+    <circle cx="830" cy="98" r="6" fill="#FEBB2E"/>
+    <circle cx="853" cy="98" r="6" fill="#28C840"/>
+
+    <text x="803" y="145"
+          fill="#7C5CFF"
+          font-size="17"
+          font-family="monospace"
+          font-weight="700">
+      const developer = {
+    </text>
+
+    <text x="825" y="180"
+          fill="#F7DF1E"
+          font-size="16"
+          font-family="monospace">
+      language: "JavaScript",
+    </text>
+
+    <text x="825" y="212"
+          fill="#61DAFB"
+          font-size="16"
+          font-family="monospace">
+      frontend: "React",
+    </text>
+
+    <text x="825" y="244"
+          fill="#4E9FFF"
+          font-size="16"
+          font-family="monospace">
+      typed: "TypeScript",
+    </text>
+
+    <text x="825" y="276"
+          fill="#7ED957"
+          font-size="16"
+          font-family="monospace">
+      backend: "Node.js"
+    </text>
+
+    <text x="803" y="300"
+          fill="#7C5CFF"
+          font-size="17"
+          font-family="monospace"
+          font-weight="700">
+      };
+    </text>
+  </g>
+
+  <!-- decorative shapes -->
+  <rect x="1075" y="44" width="54" height="54" rx="15"
+        fill="#7C5CFF" opacity="0.25"
+        transform="rotate(12 1075 44)"/>
+
+  <circle cx="744" cy="325" r="24" fill="#00D4FF" opacity="0.18"/>
+</svg>
