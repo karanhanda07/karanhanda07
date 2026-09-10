@@ -65,19 +65,9 @@ maintenance workflows and property operations.
 
 <br/><br/>
 
-<!-- ===================== MAIN STACK ===================== -->
 
-<h2 align="center">⚡ Core Tech Stack</h2>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,react,ts,nodejs,express,mongodb&theme=dark" />
-</p>
 
-<p align="center">
-  <strong>JavaScript&nbsp;&nbsp;•&nbsp;&nbsp;React&nbsp;&nbsp;•&nbsp;&nbsp;TypeScript&nbsp;&nbsp;•&nbsp;&nbsp;Node.js&nbsp;&nbsp;•&nbsp;&nbsp;Express&nbsp;&nbsp;•&nbsp;&nbsp;MongoDB</strong>
-</p>
-
-<br/>
 
 <!-- ===================== COLORFUL STACK WIDGETS ===================== -->
 
