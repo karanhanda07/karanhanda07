@@ -32,3 +32,25 @@ full-stack application for property operations and management.
     alt="Developer Dashboard"
   />
 </p>
+<br>
+
+<h2 align="center">Tech Stack</h2>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,react,ts,nodejs,express,cs,mongodb,docker,jenkins,aws,azure,git,github,cloudflare&theme=dark" alt="Tech Stack" />
+</p>
+
+<p align="center">
+  JavaScript • React • TypeScript • Node.js • Express • C# • SQL • Oracle • MongoDB
+</p>
+
+<br>
+
+<h2 align="center">Languages Across My Projects</h2>
+
+<p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=karanhanda07&layout=donut&theme=github_dark&hide_border=true&langs_count=8&hide=html,css"
+    alt="Top Languages"
+  />
+</p>
