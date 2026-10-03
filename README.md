@@ -12,7 +12,7 @@
 ### 👋 Welcome to my GitHub
 
 Junior Full-Stack Software Developer building modern web applications with  
-**JavaScript • React • TypeScript • Node.js**
+**JavaScript • React • Node.js**
 
 Currently building the **Property Management Platform** — a production-style
 full-stack application for property operations and management.
