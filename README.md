@@ -25,13 +25,7 @@ full-stack application for property operations and management.
 
 <br>
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/karanhanda07/karanhanda07/main/assets/dashboard.svg?v=10"
-    width="100%"
-    alt="Developer Dashboard"
-  />
-</p>
+
 <br>
 
 <h2 align="center">Tech Stack</h2>
