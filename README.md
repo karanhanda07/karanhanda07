@@ -24,7 +24,23 @@ full-stack application for property operations and management.
 </div>
 
 <br>
+<h2 align="center">🚀 Featured Project</h2>
 
+<h3 align="center">DevDocs AI</h3>
+
+<p align="center">
+  <strong>A full-stack document search application built from frontend to deployment.</strong>
+</p>
+
+<p align="center">
+  React • Node.js • Express • PostgreSQL • Backblaze B2 • GitHub Actions
+</p>
+
+<p align="center">
+  <a href="https://devdocspro.netlify.app">
+    <strong>🌐 View Live Project →</strong>
+  </a>
+</p>
 
 <br>
 
